@@ -30,9 +30,9 @@ export default function GuideProfilePage() {
   }
 
   return (
-    <div className="grid gap-8 lg:grid-cols-[1fr,320px]">
+    <div className="grid grid-cols-1 gap-8 lg:grid-cols-[1fr,320px]">
       <div className="space-y-6">
-        <div className="card-surface p-6">
+        <div className="card-surface p-4 md:p-6">
           <div className="flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
             <div className="flex items-center gap-4">
               <img
@@ -116,9 +116,9 @@ export default function GuideProfilePage() {
           </div>
         </div>
 
-        <div className="card-surface p-6 space-y-4">
+        <div className="card-surface p-4 md:p-6 space-y-4">
           <h3 className="section-heading">Portfolio</h3>
-          <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
+          <div className="grid grid-cols-2 gap-3 sm:grid-cols-3">
             {[1, 2, 3, 4, 5, 6].map((item) => (
               <div key={item} className="h-32 rounded-2xl bg-slate-100" />
             ))}

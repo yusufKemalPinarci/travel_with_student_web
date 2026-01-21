@@ -25,7 +25,7 @@ export default function GuideDashboardPage() {
       <section>
           <div className="flex flex-col md:flex-row md:justify-between md:items-end mb-6 gap-4">
               <div>
-                  <h1 className="text-3xl font-black text-slate-900 tracking-tight">Welcome back, Alex 👋</h1>
+                  <h1 className="text-2xl md:text-3xl font-black text-slate-900 tracking-tight">Welcome back, Alex 👋</h1>
                   <p className="text-slate-500 font-medium">You have <span className="text-primary-600 font-bold">3 pending requests</span> needing your attention.</p>
               </div>
               <div className="flex gap-3">
@@ -40,7 +40,7 @@ export default function GuideDashboardPage() {
               </div>
           </div>
           
-          <div className="grid grid-cols-2 lg:grid-cols-4 gap-4">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
                <StatsCard 
                   label="Total Earnings" 
                   value={`$${guideStats.totalEarnings}`} 

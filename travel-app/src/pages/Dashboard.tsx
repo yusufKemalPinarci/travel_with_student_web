@@ -31,10 +31,10 @@ export default function DashboardPage() {
   return (
     <div className="space-y-10">
       <ProfileCompletionWidget user={currentUser} />
-      <section className="grid gap-8 rounded-2xl bg-white p-6 shadow-card">
+      <section className="grid gap-8 rounded-2xl bg-white p-4 md:p-6 shadow-card">
         <div className="space-y-4">
           <p className="text-sm font-semibold text-primary-600">Travel with students</p>
-          <h2 className="text-3xl font-bold text-slate-900">Find a guide who knows the city like home</h2>
+          <h2 className="text-2xl md:text-3xl font-bold text-slate-900">Find a guide who knows the city like home</h2>
           <p className="text-slate-600">
             Browse verified student guides, pick experiences that match your vibe, and book with secure checkout.
           </p>
@@ -66,7 +66,7 @@ export default function DashboardPage() {
             </Button>
           </div>
         </div>
-        <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
           {filteredGuides.map((guide) => (
             <GuideCard key={guide.id} guide={guide} />
           ))}
@@ -80,7 +80,7 @@ export default function DashboardPage() {
             Explore cities
           </Button>
         </div>
-        <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
           {cities.map((city) => (
             <CityCard key={city.id} city={city} />
           ))}

@@ -36,8 +36,8 @@ export default function BookPage() {
   }
 
   return (
-    <div className="mx-auto max-w-5xl py-8">
-      <div className="grid gap-8 lg:grid-cols-[300px,1fr]">
+    <div className="mx-auto max-w-5xl px-4 py-8">
+      <div className="grid grid-cols-1 gap-8 lg:grid-cols-[300px,1fr]">
         {/* Left: Guide Summary */}
         <div className="space-y-6">
           <div className="card-surface p-6 sticky top-24">

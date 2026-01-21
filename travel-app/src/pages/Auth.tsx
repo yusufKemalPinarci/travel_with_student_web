@@ -74,9 +74,9 @@ export default function AuthPage() {
   }
 
   return (
-    <div className="mx-auto max-w-md space-y-8 py-12">
+    <div className="mx-auto max-w-md space-y-8 py-12 px-4 sm:px-0">
       <div className="text-center">
-        <h1 className="text-3xl font-bold tracking-tight text-slate-900">
+        <h1 className="text-2xl md:text-3xl font-bold tracking-tight text-slate-900">
           {headline}
         </h1>
         <p className="mt-2 text-sm text-slate-600">
@@ -86,7 +86,7 @@ export default function AuthPage() {
         </p>
       </div>
 
-      <div className="bg-white px-6 py-8 shadow-soft sm:rounded-xl sm:px-10 border border-slate-100">
+      <div className="bg-white px-4 py-6 shadow-soft sm:rounded-xl sm:px-10 border border-slate-100">
         <div className="mb-6 flex justify-center">
           <ToggleButton
             options={roles}
